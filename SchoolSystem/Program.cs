@@ -1,57 +1,36 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SchoolSystem
+namespace test
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            // q1 
-            string studentName = "Sami Ali";
-            int studentAge = 20;
-            int studentGrade = 12;
-            double studentAverage = 85.5;
-            char studentGender = 'M';
-            bool isStudentActive = true;
+            int number = 10;
 
-            Console.WriteLine("Student Information");
-            Console.WriteLine("Name: " + studentName);
-            Console.WriteLine("Age: " + studentAge);
-            Console.WriteLine("Grade: " + studentGrade);
-            Console.WriteLine("Average: " + studentAverage);
-            Console.WriteLine("Gender: " + studentGender);
-            Console.WriteLine("Active: " + isStudentActive);
+            double result1 = number;
 
-            // q2 
-            string[] students = { "Ahmad", "Sara", "Omar", "Lina" };
+            Console.WriteLine(result1);
 
-            Console.WriteLine();
-            Console.WriteLine("Students");
-            Console.WriteLine("Student 1: " + students[0]);
-            Console.WriteLine("Student 2: " + students[1]);
-            Console.WriteLine("Student 3: " + students[2]);
-            Console.WriteLine("Student 4: " + students[3]);
-            Console.WriteLine("Number of Students: " + students.Length);
 
-            // q3
-            Console.WriteLine();
-            Console.WriteLine("First Student: " + students[0]);
-            Console.WriteLine("Last Student: " + students[students.Length - 1]);
-            Console.WriteLine();
-            Console.WriteLine("Before Change");
-            Console.WriteLine(students[0]);
-            Console.WriteLine(students[1]);
-            Console.WriteLine(students[2]);
-            Console.WriteLine(students[3]);
+            double price = 20.8;
 
-            students[2] = "Khaled";
+            int result2 = (int)price;
+            int result3 = Convert.ToInt32(price);
 
-            Console.WriteLine();
-            Console.WriteLine("After Change");
-            Console.WriteLine(students[0]);
-            Console.WriteLine(students[1]);
-            Console.WriteLine(students[2]);
-            Console.WriteLine(students[3]);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
+
+
+            Console.Write("Enter your age: ");
+
+            int age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Your age is " + age);
         }
     }
 }
