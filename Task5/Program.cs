@@ -9,9 +9,9 @@ namespace SchoolSystem
             Console.WriteLine("School Management System");
             Console.WriteLine();
 
-            Student student1 = new Student("Ahmad", 20, "ABC School", 85, 101);
+            Student student1 = new Student("Osama", 23, "ABC School", 85, 101);
             Student student2 = new Student("Sara", 19, "ABC School", 92, 102);
-            Teacher teacher1 = new Teacher("Omar", 35, "ABC School", "Math");
+            Teacher teacher1 = new Teacher("Ahmad", 35, "ABC School", "Math");
 
             Console.WriteLine("Students");
             student1.DisplayStudentInfo();
